@@ -14,7 +14,7 @@ import { testConfig } from "../support/test-config.ts";
 
 const NO_KEY = !process.env.ANTHROPIC_API_KEY;
 
-describe("HTTP e2e (live Pi over the API)", { skip: NO_KEY ? "set ANTHROPIC_API_KEY" : false }, () => {
+describe("HTTP e2e (live model over the API)", { skip: NO_KEY ? "set ANTHROPIC_API_KEY" : false }, () => {
   let server: Server;
   let base: string;
 
